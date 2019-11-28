@@ -1,0 +1,28 @@
+/* Your custom styles */
+
+#header_logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    /* position: absolute; */
+    /* top: -30px; */
+    /* z-index: 1100; */
+    background: url(/img/shield_logo_50x50.png) top center no-repeat;
+}
+
+/* @media screen and (max-width: 767px){
+
+    #header_logo {
+        background: url(/img/mad-scientist30x30.png) top left no-repeat;
+
+    }
+} */
+
+.list-group-item {
+
+    margin: 0px;
+    margin-left: 5px;
+    padding: 5px 0px;
+}
