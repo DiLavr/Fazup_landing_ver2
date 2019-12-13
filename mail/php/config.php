@@ -32,21 +32,21 @@
     // *** SMTP *** //
 
         require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
-        const HOST = 'ssl://smtp.yandex.ru';
-        const LOGIN = 'sender@yandex.ru';
-        const PASS = 'senderPass';
+        const HOST = 'emlshield.com ';
+        const LOGIN = 'sender@emlshield.com';
+        const PASS = 'senderlilac28';
         const PORT = '465';
 
     // *** /SMTP *** //
 
         // Почта с которой будет приходить письмо
-    const SENDER = 'sender@yandex.ru';
+    const SENDER = 'sender@emlshield.com';
 
     // Почта на которую будет приходить письмо
-    const CATCHER = 'catcher@mail.ru';
+    const CATCHER = 'order@emlshield.com';
 
     // Тема письма
-    const SUBJECT = 'Заявка с сайта';
+    const SUBJECT = 'Contact form from EMLShield.com';
 
     // Кодировка
   const CHARSET = 'UTF-8';
