@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- ver 2 -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,6 +26,11 @@
             height: 700px;
         }
 
+        .modal-dialog {
+            max-width: 950px;
+            margin: 1.75rem auto;
+        }
+
         @media (max-width: 740px) {
 
             html,
@@ -33,6 +39,13 @@
             .intro-2 {
                 height: 800px;
             }
+
+            .modal-dialog {
+                max-width: 600px;
+                margin: 1.75rem auto;
+            }
+
+
         }
 
         @media (min-width: 800px) and (max-width: 850px) {
@@ -43,27 +56,41 @@
             .intro-2 {
                 height: 980px;
             }
+
+            .modal-dialog {
+                max-width: 800px;
+                margin: 1.75rem auto;
+            }
+
+
         }
     </style>
-        <!-- Facebook Pixel Code -->
-        <script>
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq) return; n = f.fbq = function () {
-                    n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                n.queue = []; t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '2242486752721792');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-                src="https://www.facebook.com/tr?id=2242486752721792&ev=PageView&noscript=1" /></noscript>
-        <!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2242486752721792');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2242486752721792&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body class="software-lp">
@@ -98,13 +125,16 @@
                     </ul>
                     <ul class="navbar-nav ml-auto nav-flex-icons">
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/emlshield/"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/emlshield/"><i
+                                    class="fab fa-instagram"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/emlshield/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/emlshield/"><i
+                                    class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://www.pinterest.com/emlshield/"><i class="fab fa-pinterest"></i></a>
+                            <a class="nav-link waves-effect waves-light" href="https://www.pinterest.com/emlshield/"><i
+                                    class="fab fa-pinterest"></i></a>
                         </li>
                         <!-- cart icon on top -->
                         <li class="nav-item">
@@ -136,7 +166,7 @@
         <!--Main Navigation-->
 
         <!--Intro Section-->
-        <section class="view intro-2 rgba-gradient">
+        <section class="view intro-2 rgba-gradient" id="top-section">
             <div class="mask">
                 <div class="container h-100 d-flex justify-content-center align-items-center">
                     <div class="row flex-center pt-5 mt-3">
@@ -171,7 +201,8 @@
                                         <!-- <a class="btn btn-white btn-rounded blue-text font-weight-bold ml-lg-0 wow fadeInLeft"
                                         data-wow-delay="0.3s">Order</a> -->
                                     </div>
-                                    <div class="col-6 col-md-6 justify-content-center align-items-center"><a
+                                    <div class="col-6 col-md-6 justify-content-center align-items-center  smooth-scroll">
+                                        <a href="#benefit"
                                             class="btn btn-outline-white btn-rounded font-weight-bold wow fadeInLeft"
                                             data-wow-delay="0.3s">Learn
                                             more</a></div>
@@ -196,9 +227,10 @@
             <!--Section: Features v.1-->
             <section id="features" class="mb-3">
                 <!--Section heading-->
-                <h1 class="h1-responsive mb-3 my-2 pt-5 dark-grey-text wow fadeIn text-center" data-wow-delay="0.2s" id="home">
-                    What is Fazup and why we created it?
-                    <strong class="font-weight-bold">FAZUP</strong> ?</h1>
+                <h1 class="h1-responsive mb-3 my-2 pt-5 dark-grey-text wow fadeIn text-center" data-wow-delay="0.2s"
+                    id="home">
+                    What is <strong class="font-weight-bold">FAZUP</strong> and why we created it?
+                    </h1>
                 <!--Section description-->
                 <div class="row flex-center pt-5 mt-3 mb-3">
                     <div class="col-md-12 col-lg-6 text-centertext-md-left margins">
@@ -256,91 +288,100 @@
                     <!-- /.video -->
                 </div>
 
-        <!--First row-->
-        <div class="row features wow fadeIn mb-3" data-wow-delay="0.2s">
-            <div class="col-lg-5 text-center">
-                <div class="icon-area">
-                    <div class="circle-icon">
-                        <i class="fas fa-mobile blue-text"></i>
+                <!--First row-->
+                <div class="row features wow fadeIn mb-3" data-wow-delay="0.2s">
+                    <div class="col-lg-5 text-center">
+                        <div class="icon-area">
+                            <div class="circle-icon">
+                                <i class="fas fa-mobile blue-text"></i>
+                            </div>
+                            <br>
+                            <h5 class="dark-grey-text font-weight-bold mt-2">Mobile phone is the main source of
+                                electromagnetic radiation
+                            </h5>
+                            <div class="mt-1">
+                                <p class="mx-3 grey-text">Mobile phones are the main source of exposure to radiation
+                                    alongside other everyday devices such as cordless phone DECTs, Wi-Fi boxes,
+                                    PC’s, tablets, micro-wave ovens, Bluetooth devices to name but a few. They
+                                    continuously
+                                    emit the highest amount of electromagnetic waves, close to the body and brain.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <h5 class="dark-grey-text font-weight-bold mt-2">Mobile phone is the main source of
-                        electromagnetic radiation
-                    </h5>
-                    <div class="mt-1">
-                        <p class="mx-3 grey-text">Mobile phones are the main source of exposure to radiation
-                            alongside other everyday devices such as cordless phone DECTs, Wi-Fi boxes,
-                            PC’s, tablets, micro-wave ovens, Bluetooth devices to name but a few. They
-                            continuously
-                            emit the highest amount of electromagnetic waves, close to the body and brain.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-7 text-center">
-                <div class="icon-area">
-                    <div class="circle-icon">
-                        <i class="fas fa-user-md blue-text"></i>
+                    <div class="col-lg-7 text-center">
+                        <div class="icon-area">
+                            <div class="circle-icon">
+                                <i class="fas fa-user-md blue-text"></i>
+                            </div>
+                            <br>
+                            <h5 class="dark-grey-text font-weight-bold mt-2">Scientific studies confirm possible or
+                                proven danger</h5>
+                            <div class="mt-1">
+                                <p class="mx-3 grey-text">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-0">"While we aggressively investigate the links between autism
+                                            disorders and wireless technologies, we should minimize wireless and EMF
+                                            exposures for people
+                                            with autism disorders, children of all ages, people planning a baby, and
+                                            during pregnancy"</p>
+                                        <em>Martha Herbert, MD, PhD.</em>
+                                        <footer class="blockquote-footer mb-3">
+                                            Fourth paragraf <cite><a
+                                                    href="https://bioinitiative.org/wp-content/uploads/pdfs/BioInitiativePressRelease1-1-2013.pdf"
+                                                    target="_blank"><i>BioInitiative 2012 Report Issues New Warnings on
+                                                        Wireless and EMF</i></a></cite> by University at Albany,
+                                            Rensselaer, New York (Embargoed until January 7, 2013).
+                                        </footer>
+                                    </blockquote>
+                                    Electromagnetic waves emitted by mobile phones are a major
+                                    source of concern. Many epidemiological studies show an increase in risks
+                                    (possible or proven) for frequent mobile phone users including:
+                                </p>
+                            </div>
+                            <!-- Collapse buttons -->
+                            <button class="btn btn-outline-blue btn-rounded font-weight-bold wow fadeInLeft"
+                                type="button" data-toggle="collapse" data-target="#collapseList" aria-expanded="false"
+                                aria-controls="collapseList">
+                                learn more
+                            </button>
+                        </div>
+                        <!-- / Collapse buttons -->
+                        <!-- Collapsible element -->
+                        <div class="collapse " id="collapseList">
+                            <div class="mt-3 ">
+                                <ul class="mx-3 grey-text text-left"
+                                    style="font-size: 80%; list-style-type: circle; padding: 0;">
+                                    <li>Brain tumors: gliomas, meningioma’s, neuromas (<a
+                                            href="http://www.iarc.fr/en/media-centre/pr/2010/pdfs/pr200_E.pdf"
+                                            target="_blank">Interphone</a>,
+                                        <a href="https://presse.inserm.fr/en/heavy-mobile-telephone-use-and-brain-tumours/12519/"
+                                            target="_blank">CERENAT</a>,
+                                        <a href="https://bioinitiative.org/wp-content/uploads/pdfs/BioInitiativePressRelease1-1-2013.pdf"
+                                            target="_blank">
+                                            OREBRO)</a></li>
+                                    <li><a href="http://www.fertstert.org/article/S0015-0282(07)00332-9/abstract"
+                                            target="_blank">A
+                                            decline in sperm quality</a> (Technion University, Israel)</li>
+                                    <li><a href="https://share.kaiserpermanente.org/article/new-kaiser-permanente-study-provides-evidence-of-health-risks-linked-to-electromagnetic-field-exposure/"
+                                            target="_blank">
+                                            An increase by 48% of additional risk of miscarriage</a> (for the use of
+                                        common radiating devices, Kaiser Permanente Division of Research, Oakland,
+                                        USA)
+                                    </li>
+                                    <li><a href="https://www.anses.fr/fr/system/files/AP2012SA0091EN.pdf">Possible
+                                            acute effects on cognitive functions and the well-being of children</a>
+                                        (France, ANSES, 2016)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- / Collapsible element -->
                     </div>
-                    <br>
-                    <h5 class="dark-grey-text font-weight-bold mt-2">Scientific studies confirm possible or
-                        proven danger</h5>
-                    <div class="mt-1">
-                        <p class="mx-3 grey-text">
-                            <blockquote class="blockquote">
-                                <p class="mb-0">"While we aggressively investigate the links between autism
-                                disorders and wireless technologies, we should minimize wireless and EMF exposures for people
-                                with autism disorders, children of all ages, people planning a baby, and during pregnancy"</p>
-                                <em>Martha Herbert, MD, PhD.</em>
-                                <footer class="blockquote-footer mb-3">
-                                    Fourth paragraf <cite><a href="https://bioinitiative.org/wp-content/uploads/pdfs/BioInitiativePressRelease1-1-2013.pdf" target="_blank"><i>BioInitiative 2012 Report Issues New Warnings on Wireless and EMF</i></a></cite> by University at Albany, Rensselaer, New York (Embargoed until January 7, 2013).
-                                </footer>
-                            </blockquote>
-                            Electromagnetic waves emitted by mobile phones are a major
-                            source of concern. Many epidemiological studies show an increase in risks
-                            (possible or proven) for frequent mobile phone users including:
-                        </p>
-                    </div>
-                    <!-- Collapse buttons -->
-                    <button class="btn btn-outline-blue btn-rounded font-weight-bold wow fadeInLeft" type="button"
-                        data-toggle="collapse" data-target="#collapseList" aria-expanded="false"
-                        aria-controls="collapseList">
-                        learn more
-                    </button>
                 </div>
-                <!-- / Collapse buttons -->
-                <!-- Collapsible element -->
-                <div class="collapse " id="collapseList">
-                    <div class="mt-3 ">
-                        <ul class="mx-3 grey-text text-left" style="font-size: 80%; list-style-type: circle; padding: 0;">
-                            <li>Brain tumors: gliomas, meningioma’s, neuromas (<a
-                                    href="http://www.iarc.fr/en/media-centre/pr/2010/pdfs/pr200_E.pdf" target="_blank">Interphone</a>,
-                                <a
-                                    href="https://presse.inserm.fr/en/heavy-mobile-telephone-use-and-brain-tumours/12519/" target="_blank">CERENAT</a>,
-                                <a
-                                    href="https://bioinitiative.org/wp-content/uploads/pdfs/BioInitiativePressRelease1-1-2013.pdf" target="_blank">
-                                    OREBRO)</a></li>
-                            <li><a href="http://www.fertstert.org/article/S0015-0282(07)00332-9/abstract" target="_blank">A
-                                    decline in sperm quality</a> (Technion University, Israel)</li>
-                            <li><a
-                                    href="https://share.kaiserpermanente.org/article/new-kaiser-permanente-study-provides-evidence-of-health-risks-linked-to-electromagnetic-field-exposure/" target="_blank">
-                                    An increase by 48% of additional risk of miscarriage</a> (for the use of
-                                common radiating devices, Kaiser Permanente Division of Research, Oakland,
-                                USA)
-                            </li>
-                            <li><a href="https://www.anses.fr/fr/system/files/AP2012SA0091EN.pdf">Possible
-                                    acute effects on cognitive functions and the well-being of children</a>
-                                (France, ANSES, 2016)</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- / Collapsible element -->
-            </div>
-        </div>
-        <!--/First row-->
+                <!--/First row-->
             </section>
-        <!--/Section: Features v.1-->
+            <!--/Section: Features v.1-->
         </div>
         <!--/.First container-->
 
@@ -349,14 +390,14 @@
             style="background-image: url(/img/fazup_family_photo_background.jpg)">
             <div class="flex-center white-text rgba-blue-strong">
                 <div class="container py-3 my-3">
-                    <h1 class="h1-responsive mb-3 my-2 pt-3 wow fadeIn text-center" data-wow-delay="0.2s">
+                    <h1 id="benefit" class="h1-responsive mb-3 my-2 pt-3 wow fadeIn text-center" data-wow-delay="0.2s">
                         <strong class="font-weight-bold">Benefits</strong> having Fazup</h1>
                     <section class="p-md-3 mx-md-5">
                         <div class="row mb-5 d-flex align-items-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="card">
                                     <div class="card-header white">
-                                        <h4 class="font-weight-bold mb-0 dark-grey-text">Every phone model is tested
+                                        <h4 class="font-weight-bold mb-0 dark-grey-text ">Every phone model is tested
                                         </h4>
                                     </div>
                                     <div class="card-body">
@@ -615,7 +656,7 @@
                                 <div id="collapseOne1" class="collapse show" role="tabpanel"
                                     aria-labelledby="headingOne1" data-parent="#accordionEx">
                                     <div class="card-body">
-                                        FAZUP is an adhesive passive antenna in conductive silver ink, which is
+                                        FAZUP is an adhesive passive antenna in conductive silver or gold ink, which is
                                         precisely and specifically applied to the back
                                         of each compatible mobile phone. It allows to optimize the power control of a
                                         mobile phone and to significantly reduce
@@ -645,12 +686,6 @@
                                         <table class="table table-sm table-responsive">
                                             <tbody>
                                                 <tr>
-                                                    <th class="text-right">Item:</th>
-                                                    <td>
-                                                        Fazup 01 Silver
-                                                    </td>
-                                                </tr>
-                                                <tr>
                                                     <th class="text-right">Brand:</th>
                                                     <td>
                                                         Fazup
@@ -664,12 +699,7 @@
                                                         France
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th class="text-right">Condition:</th>
-                                                    <td>
-                                                        <span class="label label-success">New</span>
-                                                    </td>
-                                                </tr>
+
                                                 <tr>
                                                     <th class="text-right">
                                                         Original Packaging:
@@ -677,7 +707,7 @@
                                                     <td>
                                                         <ul class="list-unstyled">
                                                             <li><span class="badge badge-info">Yes</span></li>
-                                                            <li>Multi-media USPS Package</li>
+                                                            <li>First-Class USPS Package</li>
                                                         </ul>
                                                     </td>
                                                 </tr>
@@ -685,7 +715,7 @@
                                                     <th class="text-right">Color:</th>
                                                     <td> <span
                                                             style="color: silver; font-weight: 700; font-size: 1.2em;">
-                                                            Silver</span> and <span
+                                                            Silver</span> or <span
                                                             style="color: gold;  font-weight: 700; font-size: 1.2em;">Gold</span>
                                                     </td>
                                                 </tr>
@@ -711,19 +741,21 @@
                                                 One or several Fazup Patches (according to your package choice)
                                             </li>
                                             <li class="list-group-item">
-                                                1x Positioning tool composition
+                                                1x Patch positioning tool
                                                 <ul>
                                                     <li>EVA foam and PET</li>
                                                     <li>3 metal guides</li>
                                                 </ul>
                                             </li>
                                             <li class="list-group-item">
-                                                1x Instruction
+                                                1x Positioning Guide
                                             </li>
                                             <li class="list-group-item">
-                                                1x User manual
+                                                1x User Guide
                                             </li>
-
+                                            <li class="list-group-item">
+                                                Servey: Mobile Phone & Health
+                                            </li>
                                         </ul>
                                         <!-- /.discriprion table -->
 
@@ -801,76 +833,449 @@
                                 <div id="collapseThree4" class="collapse" role="tabpanel"
                                     aria-labelledby="headingThree3" data-parent="#accordionEx">
                                     <div class="card-body">
-                                                <h5>
-                                                    <i class="fas fa-business-time"></i>
-                                                    Handling
-                                                </h5>
-                                                <p>
-                                                    We will ship all orders within
-                                                    <strong><mark>1 business day</mark></strong>
-                                                    of payment when order is placed Monday to
-                                                    Saturday between 9am and 7pm.*<br />
-                                                </p>
-                                                <small>*Shipping time may be different during
-                                                    national holidays and depends on USPS
-                                                    working hours. Times determined by carrier
-                                                    and are subject to change.</small>
+                                        <h5>
+                                            <i class="fas fa-business-time"></i>
+                                            Handling
+                                        </h5>
+                                        <p>
+                                            We will ship all orders within
+                                            <strong><mark>1 business day</mark></strong>
+                                            of payment when order is placed Monday to
+                                            Saturday between 9am and 7pm.*<br />
+                                        </p>
+                                        <small>*Shipping time may be different during
+                                            national holidays and depends on USPS
+                                            working hours. Times determined by carrier
+                                            and are subject to change.</small>
 
-                                                <h5>
-                                                    <i class="fas fa-truck"></i>
-                                                    Delivery
-                                                </h5>
-                                                <p>
-                                                    We typically ship according to the following
-                                                    criteria:
-                                                </p>
-                                                <div class="panel panel-default">
-                                                    <div class="panel-body">
-                                                        <table class="table table-responsive table-sm">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Type</th>
-                                                                    <th>Shipper</th>
-                                                                    <th>Delivery Time</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>First-Class Mail</td>
-                                                                    <td>USPS</td>
-                                                                    <td>
-                                                                        2-3 business days* (flan
-                                                                        envelope)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Multi-Media Mail</td>
-                                                                    <td>USPS</td>
-                                                                    <td>
-                                                                        3-5 business days*
-                                                                        (small flat box)
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <small>*delivery times are
-                                                            <u>after handling</u>.
-                                                            <span class="badge badge-warning"> Times
-                                                                determined by carrier and are
-                                                                subject to change.
-                                                                <u>after handling</u>.<br> </span></small>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    <span class="badge badge-danger">
-                                                        We only deliver to the U.S. </span>
-                                                    <span class="badge badge-success">All Items ship
-                                                        from within the U.S.</span>
-                                                </p>
+                                        <h5>
+                                            <i class="fas fa-truck"></i>
+                                            Delivery
+                                        </h5>
+                                        <p>
+                                            We typically ship according to the following
+                                            criteria:
+                                        </p>
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <table class="table table-responsive table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Type</th>
+                                                            <th>Shipper</th>
+                                                            <th>Delivery Time</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>First-Class Mail</td>
+                                                            <td>USPS</td>
+                                                            <td>
+                                                                3-5 business days* (bubble package)
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                <small>*delivery times are
+                                                    <u>after handling</u>.
+                                                    <span class="badge badge-warning"> Times
+                                                        determined by carrier and are
+                                                        subject to change.
+                                                        <u>after handling</u>.<br> </span></small>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="badge badge-danger">
+                                                We only deliver to the U.S. </span>
+                                            <span class="badge badge-success">All Items ship
+                                                from within the U.S.</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Accordion card Shipping -->
+                            <!-- /.Accordion card Shipping -->
+
+                            <!-- Accordion card Compatible Phones -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="headingThree4">
+
+                                    <div>
+                                        <a data-toggle="modal" data-toggle="modal"
+                                            data-target="#gridCompatibilityModal">
+                                            <h5 class="mb-0"><span style="color: #007bff;">Phone Tested
+                                                    Compatibility</span></h5>
+                                        </a>
+
+                                        <!-- Phone Compatibility modal-->
+                                        <div id="gridCompatibilityModal" class="modal fade" tabindex="-1" role="dialog"
+                                            aria-labelledby="gridModalLabel">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="gridModalLabel">Phone Tested
+                                                            Compatibility</h4>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row dark-grey-text lighten-3 mt-5 mb-5">
+                                                            <div class="col">
+                                                                <h4 class="blue-text">
+                                                                    Apple
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        iPhone
+                                                                        <strong>11/11 Pro/11 Pro
+                                                                            Max</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone
+                                                                        <strong>X/XS/XS Max/XR</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone <strong>8/8+</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone <strong>7/7+</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone
+                                                                        <strong>6/6+/6S/6S+</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone <strong>5/5C/5S</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone <strong>4/4S</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        iPhone <strong>3G/3GS</strong>
+                                                                    </li>
+                                                                    <li>iPhone <strong>SE</strong></li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Asus
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        Zenfone
+                                                                        <strong>3/3 Max/4 Max</strong>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    BlackBerry
+                                                                </h4>
+                                                                <ul>
+                                                                    <li><strong>9720</strong></li>
+                                                                    <li>Bold <strong>9900</strong></li>
+                                                                    <li><strong>Classic</strong></li>
+                                                                    <li>Curve <strong>9320</strong></li>
+                                                                    <li>
+                                                                        <strong><strong>Passport</strong></strong>
+                                                                    </li>
+                                                                    <li><strong>Q5</strong></li>
+                                                                    <li><strong>Z10</strong></li>
+                                                                    <li><strong></strong></li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Google
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        Pixel <strong>3/3XL</strong>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    HTC
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>Desire <strong>601</strong></li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    LG
+                                                                </h4>
+                                                                <ul>
+                                                                    <li><strong>G2/G3/G6</strong></li>
+                                                                    <li>Nexus <strong>4/5</strong></li>
+                                                                    <li>Optimus <strong>2X</strong></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h4 class="blue-text">
+                                                                    Samsung
+                                                                </h4>
+                                                                <ul>
+
+                                                                    <li>
+                                                                        <strong>A3 2015, 2016,
+                                                                            2017</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>A5 2015, 2016,
+                                                                            2017</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>A6 2018</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>A7 2015, 2016,
+                                                                            2018</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>A8 2018/A10</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>A20e/A40/A50/A70</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Core/Core Prime</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>
+                                                                            Core 2/4G/Plus</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Grand
+                                                                            (2/Plus/Prime)</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J1 2015, 2016</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J2 2015</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J3 2015, 2017</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J4 Plus</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J5 2015, 2016,
+                                                                            2017</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J6/J6+ 2018</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>J7 2015, 2016,
+                                                                            2017</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Note
+                                                                            2/3/4/5/8/9/Edge</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong><strong>Note 10/10
+                                                                                Plus</strong></strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>S/S2/S3/S3 mini</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>S4/S4 mini/S5/S5
+                                                                            mini</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>S6/S6 Edge/S6 Edge+<br></strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>S7/S7 Edge</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>S8/S8+</strong>
+                                                                    </li>
+                                                                    <li><strong>S9/S9+</strong>
+                                                                    </li>
+                                                                    <li> <strong><strong>S10/S10e/S10+</strong></strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Trend 1,2/Trend Lite
+                                                                            1,2</strong>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h4 class="blue-text">
+                                                                    Sony
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>Xperia<strong> E5</strong></li>
+                                                                    <li>
+                                                                        Xperia<strong>
+                                                                            M2/M4 Aqua</strong>
+                                                                    </li>
+                                                                    <li>Xperia<strong> M5</strong></li>
+                                                                    <li>Xperia<strong> SP</strong></li>
+                                                                    <li>
+                                                                        Xperia<strong>XA1/XA1 Ultra</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        Xperia<strong>
+                                                                            Z3/Z3Compact</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        Xperia<strong>
+                                                                            Z5/Z5 compact</strong>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Motorola
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        <strong>Moto G 1st
+                                                                            generation</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Moto G 3rd
+                                                                            generation</strong>
+                                                                    </li>
+                                                                    <li><strong>Razr</strong></li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Oneplus
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>Oneplus <strong>3</strong></li>
+                                                                    <li>
+                                                                        Oneplus <strong>5/5T</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        Oneplus <strong>6/6T</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        Oneplus <strong>7/7 Pro</strong>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Wiko
+                                                                </h4>
+                                                                <ul>
+                                                                    <li><strong>Goa</strong></li>
+                                                                    <li>Lenny <strong>1/3</strong></li>
+                                                                    <li><strong>Ozzy</strong></li>
+                                                                    <li><strong>Sunny</strong></li>
+                                                                    <li>
+                                                                        <strong>Sunset 1/Sunset 2</strong>
+                                                                    </li>
+                                                                    <li><strong>View 3</strong></li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Nokia / Microsoft
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        Lumia
+                                                                        <strong>635/650/830/920</strong>
+                                                                    </li>
+                                                                    <li><strong>3310 3G</strong></li>
+
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col">
+
+                                                                <h4 class="blue-text">
+                                                                    Huawei
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        Ascend <strong>G620S</strong>
+                                                                    </li>
+                                                                    <li><strong>GT3</strong></li>
+                                                                    <li>
+                                                                        Honor<strong>
+                                                                            5C/5X/6X/7/7Lite/7X/8/8X<br>/</strong>9/9
+                                                                        Lite/10/10 Lite/20/20
+                                                                        Lite/View 10/20
+                                                                    </li>
+                                                                    <li>
+                                                                        Mate<strong>
+                                                                            9/10 Pro/20/20 Pro</strong>
+                                                                    </li>
+                                                                    <li><strong>Nova 2</strong></li>
+                                                                    <li><strong>P7</strong></li>
+                                                                    <li>
+                                                                        <strong>P8/P8 lite/P8 lite
+                                                                            2017</strong>
+                                                                    </li>
+                                                                    <li><strong>P9/P9 lite</strong></li>
+                                                                    <li>
+                                                                        <strong>P10/P10 lite</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong><strong>P20/P20Lite/P20
+                                                                            </strong></strong>
+                                                                    </li>
+                                                                    <li><strong><strong>Pro/P30/P30
+                                                                                Pro/P30 Lite</strong></strong></li>
+                                                                    <li>
+                                                                        <strong>P Smart 2018,2019</strong>
+                                                                    </li>
+                                                                    <li>
+                                                                        <strong>Y5 II/Y5 2018,2019/Y6
+                                                                            2017,2018,2019/Y7
+                                                                            2019</strong>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Xiaomi
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        RedMi <strong>Note 3/</strong><strong>5/6
+                                                                            Pro/7</strong>
+                                                                    </li>
+                                                                    <li>Mi 9/Mi Mix 3</li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Oppo
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>RX17 Pro</li>
+                                                                    <li>FindX</li>
+                                                                </ul>
+                                                                <h4 class="blue-text">
+                                                                    Pocophone
+                                                                </h4>
+                                                                <ul>
+                                                                    <li>F1</li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn btn-default waves-effect waves-light"
+                                                            data-dismiss="modal">Close</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /. Phone Compatibility modal -->
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                            <!-- /.Accordion card Compatible Phones -->
 
                         </div>
                         <!--/.Accordion wrapper-->
@@ -882,21 +1287,24 @@
                                     <input type="hidden" name="cmd" value="_s-xclick">
                                     <input type="hidden" name="hosted_button_id" value="99NZ73QWRMUWG">
                                     <p></p>
-                                        <input type="hidden" name="on0" value="Package Options"><h3><span class="badge badge-pill badge-warning">Package&nbsp;Options</span></h3>
-                                        <select name="os0" class="browser-default custom-select">
-                                            <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
-                                            <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
-                                            <option value="Fazup 2x pack">Fazup 2x pack $47.95 USD</option>
-                                        </select>
+                                    <input type="hidden" name="on0" value="Package Options">
+                                    <h3><span class="badge badge-pill badge-warning">Package&nbsp;Options</span></h3>
+                                    <select name="os0" class="browser-default custom-select">
+                                        <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
+                                        <option value="Fazup Silver 2x Pack">Fazup Silver 2x Pack $47.95 USD</option>
+                                        <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
+                                    </select>
 
-                                        <input type="hidden" name="currency_code" value="USD">
-                                        <input type="image"
-                                            class="btn blue-gradient btn-rounded font-weight-bold wow fadeInLeft waves-effect waves-light float-right"
-                                            src="/img/Shopping_cart_white_24dp_small.png" border="0" name="submit"
-                                            alt="PayPal - The safer, easier way to pay online!">
-                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                            width="1" height="1">
+                                    <input type="hidden" name="currency_code" value="USD">
+                                    <input type="image"
+                                        class="btn blue-gradient btn-rounded font-weight-bold wow fadeIn waves-effect waves-light float-right"
+                                        src="/img/Shopping_cart_white_24dp_small.png" border="0" name="submit"
+                                        alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                                        width="1" height="1">
                                 </form>
+
+
                             </div>
                         </section>
                     </div>
@@ -1131,8 +1539,8 @@
 
                                     <!--Footer-->
 
-                                        <div class="modal-footer justify-content-center">
-                                            <!-- need to finish
+                                    <div class="modal-footer justify-content-center">
+                                        <!-- need to finish
                                         <span class="mr-4">Spread the word!</span>
                                         <a type="button" class="btn-floating btn-sm btn-fb"><i
                                                 class="fab fa-facebook-f"></i></a>
@@ -1236,7 +1644,7 @@
 
                     <div class="col-md-6 order-md-2">
                         <div class="view">
-                            <img class="img-fluid" src="./img/should_know_about_phone.jpg" alt="Why we developed Fazup">
+                            <div class="text-center"><img class="img-fluid" src="./img/should_know_about_phone.jpg" alt="Why we developed Fazup"></div>
                             <div class="mask flex-center">
 
                                 <a id="play" class="btn-floating btn-info btn-lg waves-effect" data-toggle="modal"
@@ -1267,6 +1675,11 @@
         <!--/.Section five - lond press show-->
         <!--/.6 container Press long video-->
 
+        <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+            <a href="#top-section" class="btn-floating btn-large blue-gradient">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
     </main>
     <!--/.Main content-->
 
@@ -1281,18 +1694,21 @@
                     <!--Grid column-->
                     <div class="col-12 col-md-5 text-left mb-md-0 ">
                         <h5 class="mb-0 white-text text-center text-md-left "><strong>Get connected with us</strong>
-                            </h5>
+                        </h5>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-12 col-md-7 text-center text-md-right ">
                         <!--Instagram-->
-                        <a class="p-2 m-2 fa-lg ins-ic" href="https://www.facebook.com/emlshield/"><i class="fab fa-instagram white-text mr-lg-4 "> </i></a>
+                        <a class="p-2 m-2 fa-lg ins-ic" href="https://www.facebook.com/emlshield/"><i
+                                class="fab fa-instagram white-text mr-lg-4 "> </i></a>
                         <!--Facebook-->
-                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://www.instagram.com/emlshield/"><i class="fab fa-facebook-f white-text mr-lg-4 "> </i></a>
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://www.instagram.com/emlshield/"><i
+                                class="fab fa-facebook-f white-text mr-lg-4 "> </i></a>
                         <!--Twitter-->
-                        <a class="p-2 m-2 fa-lg tw-ic" href="https://www.pinterest.com/emlshield/"><i class="fab fa-pinterest white-text mr-lg-4 "> </i></a>
+                        <a class="p-2 m-2 fa-lg tw-ic" href="https://www.pinterest.com/emlshield/"><i
+                                class="fab fa-pinterest white-text mr-lg-4 "> </i></a>
                     </div>
                     <!--Grid column-->
 
@@ -1325,10 +1741,10 @@
                         <div class="modal-content">
                             <div class="modal-header text-center">
                                 <h4 class="modal-title w-100 font-weight-bold dark-grey-text">Write to us
-<!-- form under construction -->
-<br><span style="color:red;">UNDER CONSTRUCTION</span>
+                                    <!-- form under construction -->
+                                    <br><span style="color:red;">UNDER CONSTRUCTION</span>
 
-<!-- /.form under construction -->
+                                    <!-- /.form under construction -->
 
 
                                 </h4>
@@ -1374,13 +1790,13 @@
                                 <a class="btn btn-outline-blue btn-rounded font-weight-bold wow"
                                     onclick="validateForm()">Send</a>
 
-                                    <!--STATUS IN NOT WORKING  -->
+                                <!--STATUS IN NOT WORKING  -->
                                 <div class="status" id="status"></div>
 
 
                                 <!-- form under construction -->
                                 <h4 class="modal-title w-60 font-weight-bold dark-grey-text">
-                                <span style="color:red;">UNDER CONSTRUCTION</span></h4>
+                                    <span style="color:red;">UNDER CONSTRUCTION</span></h4>
                                 <!-- /.form under construction -->
                             </div>
                         </div>
@@ -1393,12 +1809,11 @@
                 <!--Second column-->
                 <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-4 dark-grey-text ">
                     <h6 class="text-uppercase font-weight-bold "><strong>Terms & Conditions</strong></h6>
-                    <p style="color: red;">Section under construction</p>
                     <hr class="blue mb-4 mt-0 d-inline-block mx-auto " style="width: 120px; ">
-                    <p><a href="#! " class="dark-grey-text ">Shipping Policy</a> </p>
-                    <p><a href="#! " class="dark-grey-text ">Returns & Refund</a></p>
-                    <p><a href="#! " class="dark-grey-text ">Terms of Service</a></p>
-                    <p><a href="html/Privacy Policy.html" class="dark-grey-text ">Privacy Policy</a>  </p>
+                    <p><a href="/html/Shipping&Return.html" class="dark-grey-text ">Returns & Refunds</a> </p>
+                    <p><a href="/html/Terms.html" class="dark-grey-text ">Terms of Service</a></p>
+                    <p><a href="/html/Privacy Policy.html" class="dark-grey-text ">Privacy Policy</a> </p>
+                    <p><a href="/html/Compatibility.html" class="dark-grey-text ">Phone Compatibility</a></p>
                 </div>
                 <!--/.Second column-->
 
@@ -1427,7 +1842,7 @@
         <div class="footer-copyright py-3 text-center">
             <div class="container-fluid ">
                 © 2019 Copyright: LShield LLC |
-                <a href="#">Terms and Conditions</a>
+                <a href="/html/Terms.html">Terms of Service</a>
             </div>
         </div>
         <!--/.Copyright -->
