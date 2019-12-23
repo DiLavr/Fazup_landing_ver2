@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/jpg" href="/img/favicon/favicon.ico">
-    <title>ElectroMagnetic&nbsp;Prrotection&nbsp;|&nbsp;Fazup&nbsp;|&nbsp;US</title>
+    <title>ElectroMagnetic&nbsp;Protection&nbsp;|&nbsp;Fazup&nbsp;|&nbsp;US</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="/css/mdb.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!--Pinterest tracking  -->
     <meta name="p:domain_verify" content="e7161dd999802edc7e9a115c90b22f36" />
     <!--/.Pinterest tracking  -->
@@ -89,10 +89,10 @@
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=2242486752721792&ev=PageView&noscript=1" /></noscript>
+            src="https://www.facebook.com/tr?id=2242486752721792&ev=PageView&noscript=1">
+    </noscript>
     <!-- End Facebook Pixel Code -->
 </head>
-
 <body class="software-lp">
 
     <!--Header-->
@@ -1324,7 +1324,7 @@
         <!-- /.Third container - Shop Items -->
 
         <!--4 container Danger-->
-        <div class="streak streak-md streak-photo " style="background-image: url(/img/family.png)">
+        <div class="streak streak-md streak-photo " style="background-image: url(/img/Family.png)">
             <div class="flex-center white-text blue-gradient-mask ">
                 <div class="container py-3 ">
 
@@ -1868,7 +1868,6 @@
 
     <!-- Additional JS (like contact form) -->
     <script src="/js/app.js"></script>
-
     <script>
         //Animation init
         new WOW().init();
@@ -1886,66 +1885,6 @@
         $(document).ready(function () {
             $('.mdb-select').material_select();
         });
-    </script>
-
-
-    <script>
-        function validateForm() {
-            var x = document.getElementById('name').value;
-            if (x == "") {
-                document.getElementById('status').innerHTML = "Name cannot be empty";
-                return false;
-            }
-            x = document.getElementById('email').value;
-            if (x == "") {
-                document.getElementById('status').innerHTML = "Email cannot be empty";
-                return false;
-            } else {
-                var re =
-                    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                if (!re.test(x)) {
-                    document.getElementById('status').innerHTML = "Email format invalid";
-                    return false;
-                }
-            }
-            x = document.getElementById('subject').value;
-            if (x == "") {
-                document.getElementById('status').innerHTML = "Subject cannot be empty";
-                return false;
-            }
-            x = document.getElementById('message').value;
-            if (x == "") {
-                document.getElementById('status').innerHTML = "Message cannot be empty";
-                return false;
-            }
-            //get input field values data to be sent to server
-            document.getElementById('status').innerHTML = "Sending...";
-            formData = {
-                'name': $('input[name=name]').val(),
-                'email': $('input[name=email]').val(),
-                'subject': $('input[name=subject]').val(),
-                'message': $('textarea[name=message]').val()
-            };
-
-
-            $.ajax({
-                url: "mail.php",
-                type: "POST",
-                data: formData,
-                success: function (data, textStatus, jqXHR) {
-
-                    $('#status').text(data.message);
-                    if (data.code) //If mail was sent successfully, reset the form.
-                        $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    $('#status').text(jqXHR);
-                }
-            });
-
-
-
-        }
     </script>
 
 </body>
