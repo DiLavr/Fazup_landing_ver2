@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/jpg" href="/img/favicon/favicon.ico">
-    <title>ElectroMagnetic&nbsp;Protection&nbsp;|&nbsp;Fazup&nbsp;|&nbsp;US</title>
+    <title>Press&nbsp;about&nbsp;FAZUP</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -70,13 +70,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto smooth-scroll list-unstyled">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/index.html">Home</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/index.html#shop">Shop</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="/index.html#press">Press & TV</a>
                         </li>
                     </ul>
@@ -305,60 +305,79 @@
             <!--/.background pic-->
             <!--/.5 container Press-->
 
-            <!--6 container Press long video-->
-            <!--Section five - lond press show-->
-            <div class="container-fluid mt-3 mb-5">
-                <!-- Section -->
-                <section class="bg-primary z-depth-1 blue-gradient">
-                    <!-- Modal -->
-                    <div class="modal fade" id="exp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                    <iframe id="player" class="embed-responsive-item"
-                                        src="https://www.youtube.com/embed/4K2A7xwYpr0" frameborder="0"
-                                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
+<!--6 container Press long video-->
+<div class="container-fluid mt-3 mb-5">
+
+    <!-- Section -->
+    <section class="bg-primary z-depth-1">
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe id="player" class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/4K2A7xwYpr0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
-
-                    <div class="row no-gutters">
-
-                        <div class="col-md-6 order-md-2">
-                            <div class="view">
-                                <div class="text-center"><img class="img-fluid" src="/img/should_know_about_phone.jpg"
-                                        alt="Why we developed Fazup"></div>
-                                <div class="mask flex-center">
-
-                                    <a id="play" class="btn-floating btn-info btn-lg waves-effect" data-toggle="modal"
-                                        data-target="#exp"><i class="fas fa-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-md-4 mx-auto d-flex align-items-center text-white">
-                            <div>
-                                <h3 class="font-weight-normal mb-4">What should you know about your phone</h3>
-                                <p class="mb-0 wow">The extra-thin patch includes a passive antenna in
-                                    conductive silver ink, whichregulates radiation emission
-                                    of your phone. This emission is controlled through precise
-                                    and specific emplacement of the patch at the back of
-                                    mobile phone, close to its antennas. Specific emplacement
-                                    of Fazup is found in a laboratory for each compatible
-                                    mobile phone and it allows to reduce radiation emissions
-                                    without impacting communication quality.</p>
-                                <strong>Watch video, learn - Why we developed Fazup</strong>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Section -->
-
+                </div>
             </div>
-            <!--/.Section five - lond press show-->
-            <!--/.6 container Press long video-->
+        </div>
+
+        <div class="row no-gutters">
+
+            <div class="col-lg-6 order-md-2">
+                <div class="view">
+                    <img class="img-fluid" src="/img/doctor_with_phone_fazup_patch.png"
+                        alt="Video title">
+                    <div class="mask flex-center rgba-black-light">
+                        <a id="play" class="btn-floating btn-info btn-lg" data-toggle="modal" data-target="#modal1"><i
+                                class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mx-auto d-flex align-items-center text-white">
+                <div class="px-4 py-4 py-lg-0">
+                    <h3 class="font-weight-normal mb-3 mt-3">Discover the TV report about our founders
+                    </h3>
+                    <p class="mb-0 wow"> and why we are so proactive to educate people about the danger of SmartPhone Radiation.
+                        The extra-thin patch includes a passive antenna in
+                        conductive silver ink, whichregulates radiation emission
+                        of your phone. This emission is controlled through precise
+                        and specific emplacement of the patch at the back of
+                        mobile phone, close to its antennas. Specific emplacement
+                        of Fazup is found in a laboratory for each compatible
+                        mobile phone and it allows to reduce radiation emissions
+                        without impacting communication quality.</p>
+                    <strong>
+                        <p>Watch video to learn why we developed Fazup</p>
+                    </strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Section -->
+
+</div>
+<!--/.6 container Press long video-->
+
+<script type="text/javascript">
+    $('#play').on('click', function (e) {
+        e.preventDefault();
+        $("#player")[0].src += "?autoplay=1";
+        $('#player').show();
+        $('#video-cover').hide();
+    })
+    $('#modal1').on('hidden.bs.modal', function (e) {
+        $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+    });
+
+</script>
+<!--test section-->
 
     </main>
 
@@ -490,9 +509,9 @@
                 <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-4 dark-grey-text ">
                     <h6 class="text-uppercase font-weight-bold "><strong>Terms & Conditions</strong></h6>
                     <hr class="blue mb-4 mt-0 d-inline-block mx-auto " style="width: 120px; ">
-                    <p><a href="/html/Shipping&Return.html" class="dark-grey-text ">Returns & Refunds</a> </p>
+                    <p><a href="/html/shipping.html" class="dark-grey-text ">Returns & Refunds</a> </p>
                     <p><a href="/html/Terms.html" class="dark-grey-text ">Terms of Service</a></p>
-                    <p><a href="/html/Privacy_Policy.html" class="dark-grey-text ">Privacy Policy</a> </p>
+                    <p><a href="/html/privacy.html" class="dark-grey-text ">Privacy Policy</a> </p>
                     <p><a href="/html/Compatibility.html" class="dark-grey-text ">Phone Compatibility</a></p>
                 </div>
                 <!--/.Second column-->
