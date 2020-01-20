@@ -129,83 +129,161 @@
     <!--/.header-->
     <!--main content-->
     <main>
+<!--
+<div class="container mt-5 mb-5 ">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
+    return ReadForm (this);">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="CTRD7U5K2JSCY">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="choice test">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="cn" value="Add special instructions to the seller:">
+        <input type="hidden" name="no_shipping" value="2">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="1.00">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_SM.gif:NonHosted">
+        <table>
+            <tr>
+                <td><input type="hidden" name="on0" value="optional choice">optional choice</td>
+            </tr>
+            <tr>
+                <td><select name="os0">
+                        <option value="Option 1 test">Option 1 test $1.00 USD</option>
+                        <option value="Option 2 test">Option 2 test $2.00 USD</option>
+                        <option value="Option 3 test">Option 3 test $3.00 USD</option>
+                    </select> </td>
+            </tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Option 1 test">
+        <input type="hidden" name="option_amount0" value="1.00">
+        <input type="hidden" name="option_select1" value="Option 2 test">
+        <input type="hidden" name="option_amount1" value="2.00">
+        <input type="hidden" name="option_select2" value="Option 3 test">
+        <input type="hidden" name="option_amount2" value="3.00">
+        <input type="hidden" name="option_index" value="0">
 
-<div class="container pt-5 my-5 z-depth-1">
+    Enter Coupon code [coup1] &gt;
+    <input type="text" size="10" name="coupcode" ; />
 
-    <section class="p-md-3 mx-md-5">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="font-weight-bold mb-3 grey-text"><strong>Fazup eliminates or reduces feelings of discomfort:<br> 85% of
-                            satisfied users</strong></h2>
-                        <p class="lead py-3">
-                        Beyond our numerous scientific tests confirming the reduction of mobile radiation, we wanted
-                        to understand the impact of this reduction on the well-being of smartphone users. We therefore conducted an
-                        independent consumer test on 1000 people, which has shown both impressive and worrying results.
-                        <br><a href="http://www.fazupreviews.com/" target="_blank">See consumer reviews</a>
+    <input type="button" value="Apply" onclick="coupval = this.form.coupcode.value;
+    ChkCoup();" />
 
-                        </br>
-                    </div>
-                </div>
-                <hr>
-<div class="row">
-    <div class="col-12">
-        <h3 class="font-weight-bold mb-3 grey-text"><strong>Statistics on the improvements declared by the testers<br>
-        Disappearance or reduction with FAZUP</strong></h3>
-         </div>
+    Input quantity &gt;
+    <input type="text" name="quantity" value="1" size="4" />
+
+
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit"
+            alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+</div> -->
+
+<div class="container my-1 py-1 z-depth-1 blue-grey">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
+return ReadForm (this);">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="CTRD7U5K2JSCY">
+    <input type="hidden" name="lc" value="US">
+    <input type="hidden" name="item_name" value="Fazup Patch">
+    <input type="hidden" name="button_subtype" value="products">
+    <input type="hidden" name="no_note" value="0">
+    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+    <input type="hidden" name="no_shipping" value="2">
+    <input type="hidden" name="rm" value="1">
+    <input type="hidden" name="return" value="https://emlshield.com/html/thanks.html/">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="shipping" value="2.95">
+    <input type="hidden" name="add" value="1">
+    <input type="hidden" name="bn" value="PP-ShopCartBF:Shopping_cart_white_24dp.png:NonHosted">
+    <table>
+        <tr>
+            <td><input type="hidden" name="on0" value="Package Options">Package Options</td>
+        </tr>
+        <tr>
+            <td><select name="os0">
+                    <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
+                    <option value="Fazup Silver 2x Pack">Fazup Silver 2x Pack $47.95 USD</option>
+                    <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
+                </select> </td>
+        </tr>
+    </table>
+    <input type="hidden" name="option_select0" value="Fazup Silver Patch">
+    <input type="hidden" name="option_amount0" value="29.95">
+    <input type="hidden" name="option_select1" value="Fazup Silver 2x Pack">
+    <input type="hidden" name="option_amount1" value="47.95">
+    <input type="hidden" name="option_select2" value="Fazup Gold Patch">
+    <input type="hidden" name="option_amount2" value="33.95">
+    <input type="hidden" name="option_index" value="0">
+
+
+Enter Coupon code [coup1] &gt;
+<input type="text" size="10" name="coupcode" ; />
+
+<input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
+ChkCoup();" />
+
+Input quantity &gt;
+<input type="text" name="quantity" value="1" size="4" />
+
+
+
+
+
+
+    <input type="image" src="../img/Shopping_cart_white_24dp.png" border="0" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
 </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-5 mt-3">
-                <h4 class="font-weight-bold mb-3">
-                    <i class="fas fa-mobile indigo-text pr-2"></i> Heating of the mobile
-                </h4>
-                <p class="text-muted">
-                    -98%&nbsp;|&nbsp;Base = 115 people
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5 mt-3">
-                <h4 class="font-weight-bold mb-3">
-                    <i class="fas fa-deaf grey-text pr-2"></i> Heating of the ear
-                </h4>
-                <p class="text-muted">
-                    <span class="badge badge-success">-100%</span>&nbsp;|&nbsp;Base = 69 people
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-3 mt-3">
-                    <i class="fas fa-allergies amber-text pr-2"></i> Tingling
-                </h4>
-                <p class="text-muted">
-                    -91%&nbsp;|&nbsp;Base = 32 people
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-3">
-                    <i class="fas fa-frown-open red-text pr-2"></i> Headaches
-                </h4>
-                <p class="text-muted mb-lg-0">
-                    -95%&nbsp;|&nbsp;Base = 282 people
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-3">
-                    <i class="fas fa-bed lime-text pr-2"></i> Sleep disorders
-                </h4>
-                <p class="text-muted mb-lg-0">
-                    <span class="badge badge-success">-98%</span>&nbsp;|&nbsp;Base = 85 people
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-3">
-                    <i class="fas fa-assistive-listening-systems blue-text pr-2"></i> Tinnitus
-                </h4>
-                <p class="text-muted mb-lg-0">
-                    -96%&nbsp;|&nbsp;Base = 49 people
-                </p>
-            </div>
-        </div>
-    </section>
+
+
+
+<div class="container mt-5 mb-5 grey" >
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
+return ReadForm (this);">
+
+    <input type="hidden" name="business" value="CTRD7U5K2JSCY" />
+    <input type="hidden" name="lc" value="US" />
+    <input type="hidden" name="item_name" value="fazup test coupon" />
+    <input type="hidden" name="item_number" value="faz_sil" />
+    <input type="hidden" name="amount" value="20.00" />
+    <input type="hidden" name="baseamt" value="20.00" />
+    <input type="hidden" name="basedes" value="2fazup test coupon @20.00" />
+    <input type="hidden" name="button_subtype" value="products" />
+    <input type="hidden" name="no_note" value="1" />
+    <input type="hidden" name="no_shipping" value="2" />
+    <input type="hidden" name="shipping" value="3.00" />
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="add" value="1" />
+    <input type="hidden" name="currency_code" value="USD" />
+
+
+
+Enter Coupon code [coup1] &gt;
+<input type="text" size="10" name="coupcode" ; />
+
+<input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
+ChkCoup();" />
+
+Input quantity &gt;
+<input type="text" name="quantity" value="1" size="4" />
+
+
+    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_SM.gif:NonHosted">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+
+</form>
+
+
 </div>
+
 
 
     </main>
@@ -316,6 +394,8 @@
 
     <!-- SCRIPTS -->
 
+    <script type="text/javascript" src="/js/coupon.js"></script>
+
     <!-- JQuery -->
     <script type="text/javascript " src="/js/jquery-3.4.1.min.js "></script>
 
@@ -349,65 +429,6 @@
             $('.mdb-select').material_select();
         });
     </script>
-
-    <script type="text/javascript">
-    < !--
-    var discnt = 0; // no default percent discount
-
-        var coupons = new Array( // place to put coupon codes
-            "coup1", // 1st coupon value - comma seperated
-            "coup2", // 2nd coupon value - add all you want
-            "coup3" // 3rd coupon value
-        );
-        var coupdc = new Array( // place to put discounts for coupon vals
-            5,
-            10,
-            15
-        );
-        var coupval = "(blanket)"; // what user entered as coupon code
-
-        function ChkCoup() { // check user coupon entry
-            var i;
-            discnt = 0; // assume the worst
-            for (i = 0; i < coupons.length; i++)
-            {
-                if (coupval == coupons[i])
-                {
-                    discnt = coupdc[i]; // remember the discount amt
-                    alert("Valid coupon number! \n\n" + discnt +
-                        "% discount now in effect.");
-                    return;
-                }
-            }
-            alert("'" + coupval + "' is not a valid code!");
-        }
-
-        function Dollar(val) { // force to valid dollar amount
-            var str, pos, rnd = 0;
-            if (val < .995) rnd = 1; // for old Netscape browsers
-            str = escape(val * 1.0 + 0.005001 + rnd); // float, round, escape
-            pos = str.indexOf(".");
-            if (pos > 0) str = str.substring(rnd, pos + 3);
-            return str;
-        }
-
-        function ReadForm(obj1) { // apply the discount
-            var amt, des;
-            amt = obj1.baseamt.value * 1.0; // base amount
-            des = obj1.basedes.value; // base description
-
-            if (discnt > 0)
-            { // only if discount is active
-                amt = Dollar(amt - (amt * discnt / 100.0));
-                des = des + ", " + discnt + "% dis, COUP = " + coupval;
-            }
-
-            obj1.amount.value = Dollar(amt);
-            obj1.item_name.value = des;
-        }
-    //-->
-    </script>
-
 
 </body>
 
