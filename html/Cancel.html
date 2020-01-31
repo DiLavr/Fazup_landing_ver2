@@ -7,18 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/jpg" href="/img/favicon/favicon.ico">
-    <title>404</title>
+    <title>Purchase&nbsp;Complite&nbsp;|&nbsp;Fazup&nbsp;|&nbsp;US</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="/css/mdb.min.css" rel="stylesheet">
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <link href="/css/style.css" rel="stylesheet">
 
     <style type="text/css">
         html,
@@ -62,6 +58,28 @@
     <script>
         fbq('track', 'Purchase');
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2883689601675369');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2883689601675369&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
 
 </head>
 
@@ -129,42 +147,52 @@
             </div>
         </nav>
         <!--Main Navigation-->
-                <section class="view intro-2 rgba-gradient h-100">
-                    <div class="mask">
-                        <div class="container h-100 d-flex justify-content-center align-items-center text-white">
-                            <div class="row flex-center pt-5 mt-3">
-                                <h2 class="h2">Oops! 404</h2>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
         <!--Intro Section-->
-
+        <section class="view intro-2 rgba-gradient h-100">
+            <div class="mask">
+                <div class="container h-100 d-flex justify-content-center align-items-center text-white">
+                    <div class="row flex-center pt-5 mt-3">
+                        <h2 class="h2">Your order is canceled</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- /Intro section -->
     </header>
     <!--/.header-->
     <!--main content-->
     <main>
-
 <div class="container text-center">
     <div id="notfound">
         <div class="notfound">
             <div class="notfound-404">
-                <h1>Oops!</h1>
+                <h1>canceled!</h1>
             </div>
-            <h2>404 - Page not found</h2>
-            <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
-            <div class="text-center mt-2 mb-3">
-                <button type="button" class="btn btn-outline-blue btn-rounded font-weight-bold wow fadeIn"
-                    onclick="window.location.href = '../index.html#shop'">
-                    Back to Shop
-                </button>
+            <h2>Your order is canceled</h2>
+            <p><strong>We so sorry about that</strong>, if you did by mistake please view your
+
+           <div class="btn btn-blue btn-rounded font-weight-bold wow fadeIn">
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted"
+                        value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                    <input class="nav-link waves-effect waves-light justify-content-left" type="image"
+                        src="/img/Shopping_cart_white_24dp_small.png" border="0" name="submit"
+                        alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
             </div>
+        </p>
+           <p></p>
+        <div class="text-center mt-2 mb-3">
+            <button type="button" class="btn btn-outline-blue btn-rounded font-weight-bold wow fadeIn"
+                onclick="window.location.href = '../index.html#shop'">
+                Back to Shop
+            </button>
         </div>
     </div>
 </div>
-
     </main>
 
 

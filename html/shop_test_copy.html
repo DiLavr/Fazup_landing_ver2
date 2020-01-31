@@ -125,312 +125,264 @@
             </div>
         </section>
         <!-- /Intro section -->
+
+
+        <!-- Start of Script -->
+        <script language="javascript">
+
+                // function validate(text1, text2) {
+
+                //     if (text1 == text2)
+                //     {
+                //         window.alert("Nice, you get a 10% Discount!");
+                //     }
+                //     if (text1 !== text2)
+                //     {
+                //         window.alert("Sorry, No Discount!");
+                //     }
+                // }
+
+
+    var discnt = 0; // no default percent discount
+
+    var coupons = new Array( // place to put coupon codes
+        "coup1", // 1st coupon value - comma seperated
+        "coup2", // 2nd coupon value - add all you want
+        "coup3" // 3rd coupon value
+    );
+    var coupdc = new Array( // place to put discounts for coupon vals
+        20,
+        40,
+        60
+    );
+    var coupval = "(blanket)"; // what user entered as coupon code
+
+    function validate() { // check user coupon entry
+        var i;
+        discnt = 0; // assume the worst
+
+        for (i = 0; i < coupons.length; i++)
+        {
+            if (coupval == coupons[i])
+            {
+                discnt = coupdc[i]; // remember the discount amt
+
+                alert("Valid coupon number! \n\n" + discnt +
+                    "% discount now in effect.");
+                return;
+            }
+        }
+        alert("'" + coupval + "' is not a valid code!");
+    }
+
+
+
+
+
+
+
+            function CalculateOrder(form) {
+
+                if (form.coupcode.value == coupval)
+                {
+                    form.discount_rate.value = discnt;
+                    form.discount_rate2.value = discnt;
+                    form.on3.value = "Coupon Entered";
+                    form.os3.value = coupval;
+                }
+
+            }
+
+        </script>
+        <!-- End of Script -->
+
+
+
     </header>
     <!--/.header-->
     <!--main content-->
     <main>
-<!--
-<div class="container mt-5 mb-5 ">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
-    return ReadForm (this);">
-        <input type="hidden" name="cmd" value="_cart">
-        <input type="hidden" name="business" value="CTRD7U5K2JSCY">
-        <input type="hidden" name="lc" value="US">
-        <input type="hidden" name="item_name" value="choice test">
-        <input type="hidden" name="button_subtype" value="products">
-        <input type="hidden" name="no_note" value="0">
-        <input type="hidden" name="cn" value="Add special instructions to the seller:">
-        <input type="hidden" name="no_shipping" value="2">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="shipping" value="1.00">
-        <input type="hidden" name="add" value="1">
-        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_SM.gif:NonHosted">
-        <table>
-            <tr>
-                <td><input type="hidden" name="on0" value="optional choice">optional choice</td>
-            </tr>
-            <tr>
-                <td><select name="os0">
-                        <option value="Option 1 test">Option 1 test $1.00 USD</option>
-                        <option value="Option 2 test">Option 2 test $2.00 USD</option>
-                        <option value="Option 3 test">Option 3 test $3.00 USD</option>
-                    </select> </td>
-            </tr>
-        </table>
-        <input type="hidden" name="option_select0" value="Option 1 test">
-        <input type="hidden" name="option_amount0" value="1.00">
-        <input type="hidden" name="option_select1" value="Option 2 test">
-        <input type="hidden" name="option_amount1" value="2.00">
-        <input type="hidden" name="option_select2" value="Option 3 test">
-        <input type="hidden" name="option_amount2" value="3.00">
-        <input type="hidden" name="option_index" value="0">
 
-    Enter Coupon code [coup1] &gt;
-    <input type="text" size="10" name="coupcode" ; />
-
-    <input type="button" value="Apply" onclick="coupval = this.form.coupcode.value;
-    ChkCoup();" />
-
-    Input quantity &gt;
-    <input type="text" name="quantity" value="1" size="4" />
+<!-- START SAMPLE CODE SECTION -->
 
 
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit"
-            alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
-</div> -->
+<!-- PARAGRAPH 1 -->
+Discount &amp; Coupon Examples
 
-<div class="container my-1 py-1 z-depth-1 blue-grey">
-by coupon js
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
-return ReadForm (this);">
-    <input type="hidden" name="cmd" value="_cart">
-    <input type="hidden" name="business" value="CTRD7U5K2JSCY">
-    <input type="hidden" name="lc" value="US">
-    <input type="hidden" name="item_name" value="Fazup Patch">
-    <input type="hidden" name="button_subtype" value="products">
-    <input type="hidden" name="no_note" value="0">
-    <input type="hidden" name="cn" value="Add special instructions to the seller:">
-    <input type="hidden" name="no_shipping" value="2">
-    <input type="hidden" name="rm" value="1">
-    <input type="hidden" name="return" value="https://emlshield.com/html/thanks.html/">
-    <input type="hidden" name="currency_code" value="USD">
-    <input type="hidden" name="shipping" value="2.95">
-    <input type="hidden" name="add" value="1">
-    <input type="hidden" name="bn" value="PP-ShopCartBF:Shopping_cart_white_24dp.png:NonHosted">
-    <table>
-        <tr>
-            <td><input type="hidden" name="on0" value="Package Options">Package Options</td>
-        </tr>
-        <tr>
-            <td><select name="os0">
-                    <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
-                    <option value="Fazup Silver 2x Pack">Fazup Silver 2x Pack $47.95 USD</option>
-                    <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
-                </select> </td>
-        </tr>
-    </table>
-    <input type="hidden" name="option_select0" value="Fazup Silver Patch">
-    <input type="hidden" name="option_amount0" value="29.95">
-    <input type="hidden" name="option_select1" value="Fazup Silver 2x Pack">
-    <input type="hidden" name="option_amount1" value="47.95">
-    <input type="hidden" name="option_select2" value="Fazup Gold Patch">
-    <input type="hidden" name="option_amount2" value="33.95">
+<br><br>
+
+Add to Cart - Enter the Promo Coupon Code, Get a 10% Discount, on Screen Validation.
+
+<br><br>
+
+Notes:<br>
+This example uses a script to verify the Promo Coupon Code and then applies the associated Discount Rate using the the
+&quot;discount_rate&quot; and the &quot;discount_rate2&quot; variables.
+<br><br>
+Give it a try, the Promo Coupon Code is:&nbsp;&nbsp; GOLD10
+
+<br><br>
+
+
+<!-- START CONTENTS -->
+
+<!-- START BUTTON EXAMPLES -->
+
+
+Widgets in Space
+
+<br><br>
+
+Widget Cupcakes
+
+<br><br>
+
+
+<!-- Start of Add to Cart Form -->
+<!-- Note: target="_self" was replaced with the variable target="_self" -->
+<!-- Note: shopping_url also added to code -->
+<!-- These two changes allow better functionality with IE and Firefox -->
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
+    <input type="hidden" name="cpp_header_image" value="https://emlshield.com/EMLSHIELD_print_logo_151x90.png">
+
+    Please Choose:&#160;&#160;
+    <input type="hidden" name="on0" value="Choice">
+    <select name="os0">
+        <option value="Standard, 6 each per Box" selected>Standard, 6 each per Box - $9.95</option>
+        <option value="Standard, 12 each per Box">Standard, 12 each per Box - $16.95</option>
+        <option value="Deluxe, 6 each per Box">Deluxe, 6 each per Box - $12.95</option>
+        <!-- <option value="Deluxe, 12 each per Box">Deluxe, 12 each per Box - $22.95</option> -->
+    </select>
+
+
+    <!-- option_index value=0 is associated with variable on0 -->
+    <!-- option_index value=1 is associated with variable on1 -->
     <input type="hidden" name="option_index" value="0">
+    <!-- -->
+    <input type="hidden" name="option_select0" value="Standard, 6 each per Box">
+    <input type="hidden" name="option_amount0" value="9.95">
+    <input type="hidden" name="option_item_number0" value="S-6-BOX">
+    <!-- -->
+    <input type="hidden" name="option_select1" value="Standard, 12 each per Box">
+    <input type="hidden" name="option_amount1" value="16.95">
+    <input type="hidden" name="option_item_number1" value="S-12-BOX">
+    <!-- -->
+    <input type="hidden" name="option_select2" value="Deluxe, 6 each per Box">
+    <input type="hidden" name="option_amount2" value="12.95">
+    <input type="hidden" name="option_item_number2" value="D-6-BOX">
+    <!-- -->
+    <!-- <input type="hidden" name="option_select3" value="Deluxe, 12 each per Box">
+    <input type="hidden" name="option_amount3" value="22.95">
+    <input type="hidden" name="option_item_number3" value="D-12-BOX"> -->
+
+    <br><br>
+Where you find about us? &#160;&#160;
+    <input type="hidden" name="on1" value="Source">
+    <select name="os1">
+        <option value="Instagram" selected>Instagram</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Google">Google</option>
+        <option value="Recommendation">Friend Recommended me</option>
+        <option value="Banana Karma">Pharmacy Commercial</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <br><br>
+    Optional Message to Seller:&#160;&#160;
+    <input type="hidden" name="on2" value="Message to Seller">
+    <input type="text" name="os2" maxlength="80">
+
+    <br><br>
+    <!-- Start Coupon Validate -->
+    Enter Promo Coupon and get discount:
+    &#160;&#160;&#160;
+    <input type="text" name="coupcode">
+    <input type="button" value="Check It" name="Submit" onclick="coupval = this.form.coupcode.value;validate()">
+
+<!-- <input type="button" value="Check It" onclick="coupval = this.form.coupcode.value; -->
+<!-- ChkCoup();" /> -->
 
 
-Enter Coupon code [coup1] &gt;
-<input type="text" size="10" name="coupcode" ; />
 
-<input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
-ChkCoup();" />
+    <!-- End Coupon Validate -->
 
-Input quantity &gt;
-<input type="text" name="quantity" value="1" size="4" />
-
-    <input type="image" src="../img/Shopping_cart_white_24dp.png" border="0" name="submit"
-        alt="PayPal - The safer, easier way to pay online!">
+    <br><br><br>
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
+        onclick=CalculateOrder(this.form) name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-
-</div>
-
-
-<div class="container green">
-<p>тест с git hub</p>
-
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="add" value="1">
     <input type="hidden" name="cmd" value="_cart">
-    <input type="hidden" name="business" value="CTRD7U5K2JSCY">
-    <input type="hidden" name="lc" value="US">
-    <input type="hidden" name="item_name" value="Fazup Silver Patch">
-    <input type="hidden" name="item_number" value="753387069299">
-    <input type="hidden" name="amount" value="29.95">
+    <!-- Replace "business" value with your PayPal Email Address or Account ID -->
+    <input type="hidden" name="business" value="order@emlshield.com">
+    <input type="hidden" name="item_name" value="Item Description:">
+    <input type="hidden" name="no_shipping" value="2">
+    <input type="hidden" name="discount_rate">
+    <input type="hidden" name="discount_rate2">
+    <input type="hidden" name="on3">
+    <input type="hidden" name="os3">
+    <!-- Replace value with the web page you want the customer to return to -->
+    <input type="hidden" name="shopping_url" value="emlshield.com/html/shop_test_copy.html">
+    <!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+    <input type="hidden" name="return" value="emlshield.com/html/thanks.html">
+    <!-- Replace value with the web page you want the customer to return to after item cancellation -->
+    <input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
     <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="lc" value="US">
     <input type="hidden" name="button_subtype" value="products">
     <input type="hidden" name="no_note" value="0">
     <input type="hidden" name="cn" value="Add special instructions to the seller:">
-    <input type="hidden" name="no_shipping" value="2">
-    <input type="hidden" name="rm" value="1">
-    <input type="hidden" name="return" value="https://emlshield.com/html/thanks.html">
-    <input type="hidden" name="shipping" value="2.79">
-    <input type="hidden" name="add" value="1">
-    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_SM.gif:NonHosted">
-    <input type="hidden" name="discount_rate" value="0">
+    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+</form>
+<!-- End Add to Cart Button Code -->
 
-
-<label>Enter Coupon Code</label>
-<input type="text" id="coup" name="code" value="">
-<input id="Coupon" type="button" value="Submit" onclick="checkCode(document.getElementById('coup').value)" />
+<br>
 
 
 
 
 
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+<!--  Start of View Cart Button Code  -->
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
+    <input type="hidden" name="cpp_header_image" value="https://emlshield.com/EMLSHIELD_print_logo_151x90.png">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="display" value="1">
+    <!-- Replace "business" value with your PayPal Email Address or Account ID -->
+    <input type="hidden" name="business" value="order@emlshield.com">
+    <!-- Replace value with the web page you want the customer to return to -->
+    <input type="hidden" name="shopping_url" value="http://www.yourwebsite.com/Shop.html">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-<!-- the discount input -->
-
-
-</div>
-
-<!-- <div class="container mt-5 mb-5 grey" >
-<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
-return ReadForm (this);">
-
-    <input type="hidden" name="business" value="CTRD7U5K2JSCY" />
-    <input type="hidden" name="lc" value="US" />
-    <input type="hidden" name="item_name" value="fazup test coupon" />
-    <input type="hidden" name="item_number" value="faz_sil" />
-    <input type="hidden" name="amount" value="20.00" />
-    <input type="hidden" name="baseamt" value="20.00" />
-    <input type="hidden" name="basedes" value="2fazup test coupon @20.00" />
-    <input type="hidden" name="button_subtype" value="products" />
-    <input type="hidden" name="no_note" value="1" />
-    <input type="hidden" name="no_shipping" value="2" />
-    <input type="hidden" name="shipping" value="3.00" />
-    <input type="hidden" name="cmd" value="_cart" />
-    <input type="hidden" name="add" value="1" />
-    <input type="hidden" name="currency_code" value="USD" />
+<!--  End of View Cart Button Code  -->
 
 
 
-Enter Coupon code [coup1] &gt;
-<input type="text" size="10" name="coupcode" ; />
 
-<input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
-ChkCoup();" />
-
-Input quantity &gt;
-<input type="text" name="quantity" value="1" size="4" />
+<!-- END BUTTON EXAMPLES -->
 
 
-    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_SM.gif:NonHosted">
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit"
-        alt="PayPal - The safer, easier way to pay online!">
 
-</form>
+<!-- END SAMPLE CODE SECTION -->
 
-
-</div> -->
-
-<!-- <div class="container my-1 py-1 z-depth-1 red">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
-return ReadForm(this);">
-        <input type="hidden" name="cmd" value="_cart">
-        <input type="hidden" name="business" value="CTRD7U5K2JSCY">
-        <input type="hidden" name="lc" value="US">
-        <input type="hidden" name="item_name" value="Fazup Patch">
-        <input type="hidden" name="amount" value="20.00" />
-        <input type="hidden" name="button_subtype" value="products">
-        <input type="hidden" name="no_note" value="0">
-        <input type="hidden" name="cn" value="Add special instructions to the seller:">
-        <input type="hidden" name="no_shipping" value="2">
-        <input type="hidden" name="rm" value="1">
-        <input type="hidden" name="return" value="https://emlshield.com/html/thanks.html/">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="shipping" value="2.95">
-        <input type="hidden" name="add" value="1">
-        <input type="hidden" name="bn" value="PP-ShopCartBF:Shopping_cart_white_24dp.png:NonHosted">
-        <table>
-            <tr>
-                <td><input type="hidden" name="on0" value="Package Options">Package Options</td>
-            </tr>
-            <tr>
-                <td><select name="os0">
-                        <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
-                        <option value="Fazup Silver 2x Pack">Fazup Silver 2x Pack $47.95 USD</option>
-                        <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
-                    </select> </td>
-            </tr>
-        </table>
-        <input type="hidden" name="option_select0" value="Fazup Silver Patch">
-        <input type="hidden" name="option_amount0" value="29.95">
-        <input type="hidden" name="option_select1" value="Fazup Silver 2x Pack">
-        <input type="hidden" name="option_amount1" value="47.95">
-        <input type="hidden" name="option_select2" value="Fazup Gold Patch">
-        <input type="hidden" name="option_amount2" value="33.95">
-        <input type="hidden" name="option_index" value="0">
+<br><br>
 
 
-        Enter Coupon code [coup1] &gt;
-        <input type="text" size="10" name="coupcode" ; />
+<br><br><br><br>
 
-        <input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
-ChkCoup();" />
-
-        Input quantity &gt;
-        <input type="text" name="quantity" value="1" size="4" />
+<br><br>
+NOTES:
+<br>
+In order to test the code, you must replace the &quot;business&quot; value variable with your PayPal Email Address or
+Account ID.
 
 
 
 
 
-
-        <input type="image" src="../img/Shopping_cart_white_24dp.png" border="0" name="submit"
-            alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
-
-
-</div> -->
-
-<!-- <div class="container my-1 py-1 z-depth-1 blue">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal';
-return ReadForm(this);">
-        <input type="hidden" name="cmd" value="_cart">
-        <input type="hidden" name="business" value="CTRD7U5K2JSCY">
-        <input type="hidden" name="lc" value="US">
-        <input type="hidden" name="item_name" value="Fazup Patch">
-        <input type="hidden" name="amount" value="20.00" />
-        <input type="hidden" name="button_subtype" value="products">
-        <input type="hidden" name="no_note" value="0">
-        <input type="hidden" name="cn" value="Add special instructions to the seller:">
-        <input type="hidden" name="no_shipping" value="2">
-        <input type="hidden" name="rm" value="1">
-        <input type="hidden" name="return" value="https://emlshield.com/html/thanks.html/">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="shipping" value="2.95">
-        <input type="hidden" name="add" value="1">
-        <input type="hidden" name="bn" value="PP-ShopCartBF:Shopping_cart_white_24dp.png:NonHosted">
-        <table>
-            <tr>
-                <td><input type="hidden" name="on0" value="Package Options">Package Options</td>
-            </tr>
-            <tr>
-                <td><select name="os0">
-                        <option value="Fazup Silver Patch">Fazup Silver Patch $29.95 USD</option>
-                        <option value="Fazup Silver 2x Pack">Fazup Silver 2x Pack $47.95 USD</option>
-                        <option value="Fazup Gold Patch">Fazup Gold Patch $33.95 USD</option>
-                    </select> </td>
-            </tr>
-        </table>
-        <input type="hidden" name="option_select0" value="Fazup Silver Patch">
-        <input type="hidden" name="option_amount0" value="29.95">
-        <input type="hidden" name="option_select1" value="Fazup Silver 2x Pack">
-        <input type="hidden" name="option_amount1" value="47.95">
-        <input type="hidden" name="option_select2" value="Fazup Gold Patch">
-        <input type="hidden" name="option_amount2" value="33.95">
-        <input type="hidden" name="option_index" value="0">
-
-
-        Enter Coupon code [coup1] &gt;
-        <input type="text" size="10" name="coupcode" ; />
-
-        <input type="button" value="Check It" onclick="coupval = this.form.coupcode.value;
-ChkCoup();" />
-
-        Input quantity &gt;
-        <input type="text" name="quantity" value="1" size="4" />
-
-        <input type="image" src="../img/Shopping_cart_white_24dp.png" border="0" name="submit"
-            alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
-</div> -->
 
     </main>
 
@@ -539,7 +491,7 @@ ChkCoup();" />
     <!--/.Footer-->
 
 
-    <script>
+    <!-- <script>
     function checkCode(theCode) {
             var cCode = document.getElementById('coup');
             var tenCode = "code10";
@@ -575,7 +527,7 @@ ChkCoup();" />
             document.getElementById('coup').value = "";
         }
 
-    </script>
+    </script> -->
 
 
     <!-- SCRIPTS -->
