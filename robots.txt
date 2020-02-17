@@ -1,0 +1,9 @@
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /mdb-addons/
+Disallow: /css/
+
+
+Sitemap: https://emlshield.com/sitemap.xml
