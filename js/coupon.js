@@ -3,13 +3,15 @@
 
 var coupons = new Array( // place to put coupon codes
     "coup1", // 1st coupon value - comma seperated
+    "firecracker0724", // special coupon for ebay guy
     "coup2", // 2nd coupon value - add all you want
     "coup3" // 3rd coupon value
 );
 var coupdc = new Array( // place to put discounts for coupon vals
-    20,
-    40,
-    95
+    5,
+    15,
+    10,
+    20
 );
 var coupval = "(blanket)"; // what user entered as coupon code
 
