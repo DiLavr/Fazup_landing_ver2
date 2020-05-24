@@ -61,13 +61,9 @@ header,
     background: url(/img/shield_logo_50x50.png) top center no-repeat;
 }
 
-/* @media screen and (max-width: 767px){
-
-    #header_logo {
-        background: url(/img/mad-scientist30x30.png) top left no-repeat;
-
-    }
-} */
+.software-lp .navbar {
+    background-color: #44c1f6;
+}
 
 .list-group-item {
 
