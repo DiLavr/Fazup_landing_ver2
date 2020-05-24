@@ -61,9 +61,17 @@ header,
     background: url(/img/shield_logo_50x50.png) top center no-repeat;
 }
 
+/* top menu control */
+.software-lp .navbar:not(.top-nav-collapse) {
+    background: transparent;
+    box-shadow: none;
+}
+
+
 .software-lp .navbar {
     background-color: #44c1f6;
 }
+
 
 .list-group-item {
 
