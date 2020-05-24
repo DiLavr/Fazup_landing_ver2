@@ -25,6 +25,10 @@ header,
         max-width: 600px;
         margin: 1.75rem auto;
     }
+
+    #arrow-up {
+        display: none;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
