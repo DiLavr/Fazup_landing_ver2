@@ -89,8 +89,8 @@
             <div class="notfound-404">
                 <h1>Smile4pet</h1>
             </div>
-            <h2>Peyment processing for Anesthesia-free teeth cleaning for dogs and cats</h2>
-            <p>The credid card processing fee (4% - charged at shipping fee )+ CT state sales taxx (6.35%) .</p>
+            <h2>Payment processing for Anesthesia-free teeth cleaning for dogs and cats</h2>
+            <p>The credit card processing fee (4% - charged at shipping fee )+ Connecticut state sales tax (6.35%) .</p>
             <div class="text-center mt-2 mb-3">
                
                 <div id="smart-button-container">
@@ -112,7 +112,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"description":"Dog teeth cleaning","amount":{"currency_code":"USD","value":215.18,"breakdown":{"item_total":{"currency_code":"USD","value":195},"shipping":{"currency_code":"USD","value":7.8},"tax_total":{"currency_code":"USD","value":12.38}}}}]
+                          purchase_units: [{"description":"Dog teeth cleaning","amount":{"currency_code":"USD","value":215.18,"breakdown":{"item_total":{"currency_code":"USD","value":195},"Processing fee":{"currency_code":"USD","value":7.8},"tax_total":{"currency_code":"USD","value":12.38}}}}]
                         });
                       },
               
@@ -157,7 +157,7 @@
 
         <!-- Copyright-->
         <div class="footer-copyright py-3 text-center">
-            <div class="container-fluid ">
+            <div class="container-fluid">
                 © 2019 | 2020 Copyright: smile4pet.com |
                 
             </div>
