@@ -7,9 +7,9 @@ var coupons = new Array( // place to put coupon codes
     "coup3" // 3rd coupon value
 );
 var coupdc = new Array( // place to put discounts for coupon vals
-    5,
     10,
-    20
+    30,
+    70
 );
 var coupval = "(blanket)"; // what user entered as coupon code
 
