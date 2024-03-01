@@ -16,7 +16,7 @@ function getApiContext()
     );
 
     $apiContext->setConfig([
-        'mode' => 'sandbox', // Или 'live', если вы готовы к продакшену
+        'mode' => 'live', // Или 'live', если вы готовы к продакшену
     ]);
 
     return $apiContext;
