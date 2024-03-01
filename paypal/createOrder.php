@@ -8,8 +8,8 @@ use PayPal\Rest\ApiContext;
 
 function getApiContext()
 {
-    $clientId = 'ARoQepQNWo7H_8l5OFX5M05HbnITn1pmvLx0KeFNfBNcdch9GBEKSXAOv0ppzo7iWtZL8aALQbs-DpFf';
-    $clientSecret = 'ECdXvM-Asa98_Nm-ut6CwXMBFcpZ-M7YlnPpNaPb533VKuuz7ZF_xhsJASZ8omjiWcTov4SWYtSE0Cv_';
+    $clientId = 'ARTVwaGAWl7sW7IugGeM_w4GvmTU-kMmwi-J2LZl9V_1ndQEPutrDCErFvgmiCzyZUj0q7WgDlBtJezq';
+    $clientSecret = 'EJxD_M5xJWL1ctHq49rxf3vQNT24gjW84k6bYsV-aX1Km0X0XM08CdtEZusJeXN6F2Ut7FDYa8x-kJET';
 
     $apiContext = new ApiContext(
         new OAuthTokenCredential($clientId, $clientSecret)
